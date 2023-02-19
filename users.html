@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMS</title>
+
+    <!-- linkowanie bootstrapa -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- linkowanie ikon z fontawesome -->
+    <script src="https://kit.fontawesome.com/1387792aac.js" crossorigin="anonymous"></script>
+    <!-- linkowanie czcionki z google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,700;1,200&display=swap" rel="stylesheet">
+    <!-- linkowanie własnych styli style.css -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    
+    <div class="panel text-light">
+        <div class="row m-0 h-100">
+            <div class="col-2 p-0">
+                <section class="panel-left d-flex flex-column text-center">
+                    <section class="date-box text-center py-5">
+                        <p class="day mb-0">środa</p>
+                        <p class="time mb-0">12:00</p>
+                        <p class="date mb-0">20/20/2020</p>
+                    </section>
+                    <nav class="menu d-flex flex-column justify-content-around align-items-center px-4">
+                        <a href="index.html" class="main-page">
+                            <i class="fa-sharp fa-solid fa-sliders"></i>
+                            <p class="menu-text">strona główna</p>
+                        </a>
+                        <a href="posts.html" class="posts">
+                            <i class="fa-regular fa-comments"></i>
+                            <p class="menu-text">Posty</p>
+                        </a>
+                        <a href="users.html" class="users active">
+                            <i class="fa-solid fa-user-group"></i>
+                            <p class="menu-text">użytkownicy</p>
+                        </a>
+                    </nav>
+                    <section class="footer mt-5">
+                        <h3 class="footer-title mb-0">Diamonds CMS</h3>
+                        <p class="footer-text">&copy; Copyright 2022</p>
+                    </section>
+                </section>
+            </div>
+            <div class="col-10 p-0">
+                <div class="panel-right h-100 text-light posts">
+
+                    <section class="info-top text-center p-5 mx-5">
+                        <h1>użytkownicy</h1>
+                    </section>
+
+                   <div class="row mb-0">
+
+                        <div class="col-8">
+
+                            <section class="user-list p-5">
+                                <ul class="list-group">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <p class="mb-0">Jan Kowalski</p>
+                                        <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">Edytuj profil</button>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <p class="mb-0">Jan Kowalski</p>
+                                        <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">Edytuj profil</button>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <p class="mb-0">Jan Kowalski</p>
+                                        <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">Edytuj profil</button>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <p class="mb-0">Jan Kowalski</p>
+                                        <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">Edytuj profil</button>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <p class="mb-0">Jan Kowalski</p>
+                                        <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">Edytuj profil</button>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <p class="mb-0">Jan Kowalski</p>
+                                        <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">Edytuj profil</button>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <p class="mb-0">Jan Kowalski</p>
+                                        <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">Edytuj profil</button>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <p class="mb-0">Jan Kowalski</p>
+                                        <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">Edytuj profil</button>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <p class="mb-0">Jan Kowalski</p>
+                                        <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">Edytuj profil</button>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <p class="mb-0">Jan Kowalski</p>
+                                        <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">Edytuj profil</button>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <p class="mb-0">Jan Kowalski</p>
+                                        <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">Edytuj profil</button>
+                                    </li>
+                                    
+                                </ul>
+
+                                <div class="latest-posts-switch d-flex align-items-center justify-content-center mt-5">
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination">
+                                          <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                              <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                          </li>
+                                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                          <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                              <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                          </li>
+                                        </ul>
+                                      </nav>
+                                </div>
+
+                            </section>
+
+                        </div>
+                        <div class="col-4 pe-5 user-search">
+                            <section class="aside-header text-center py-5 me-3">
+                                <h1 class="aside-header-title"><i class="fa-regular fa-gem"></i> DiamondSearch</h1>
+                            </section>
+                            <section class="diamond-search pt-5 text-center me-3">
+                                <form>
+                                    <div class="mb-3">
+                                      <label for="exampleInputEmail1" class="form-label">Nazwa użytkownika:</label>
+                                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="exampleInputEmail1" class="form-label">Adres e-mail:</label>
+                                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="exampleInputEmail1" class="form-label">Adres IP:</label>
+                                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="exampleInputEmail1" class="form-label">Imię i nazwisko: </label>
+                                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+
+                                    <p class="mb-0">Poziom konta: </p>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>- wybierz poziom konta -</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                   
+                                    <div class="diamond-search-button-box d-flex flex-row align-items-center justify-content-end mt-5">
+                                        <button class="btn btn-outline-light me-3 px-3 py-2">Szukaj</buttonc>
+                                        <button class="btn btn-outline-light px-3 py-2">Wyczyść</buttonc>
+                                    </div>
+
+                                </form>
+                            </section>
+                        </div>
+
+                   </div>
+                   
+                
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+     <!-- Modal -->
+     <div class="modal fade users-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-5">
+                
+                <h1 class="modal-title mb-3" id="exampleModalLabel">Ustawienia profilu:</h1>
+               
+                <div class="modal-body text-dark px-0">
+
+                   <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Nazwa użytkownika:</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputPassword" class="form-label">Hasło:</label>
+                            <input type="password" class="form-control" id="inputPassword">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Adres e-mail:</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="from-select" class="form-label">Poziom konta: </label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>- wybierz poziom konta -</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                   
+                        <div class="mb-0">
+                            <p class="users-modal-newsletter-title">Newsletter:</p>
+
+                            <div class="d-flex flex-row">
+                                <div class="form-check me-3">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                    Tak
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                    Nie
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-check mt-3">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                Zablokuj konto
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary px-4 mt-4" data-bs-dismiss="modal">Zamknij</button>
+                    <button type="button" class="btn btn-primary px-4 mt-4">Zapisz zmiany</button>
+                </div>
+            </div>
+        </div>
+    </div>
+       
+       
+
+    <!-- linkowanie skryptow bootstrapa -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+   
+</body>
+</html>

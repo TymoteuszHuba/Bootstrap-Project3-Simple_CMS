@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMS</title>
+
+    <!-- linkowanie bootstrapa -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- linkowanie ikon z fontawesome -->
+    <script src="https://kit.fontawesome.com/1387792aac.js" crossorigin="anonymous"></script>
+    <!-- linkowanie czcionki z google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,700;1,200&display=swap" rel="stylesheet">
+    <!-- linkowanie własnych styli style.css -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    
+    <div class="panel text-light">
+        <div class="row m-0 h-100">
+            <div class="col-2 p-0">
+                <section class="panel-left d-flex flex-column text-center">
+                    <section class="date-box text-center py-5">
+                        <p class="day mb-0">środa</p>
+                        <p class="time mb-0">12:00</p>
+                        <p class="date mb-0">20/20/2020</p>
+                    </section>
+                    <nav class="menu d-flex flex-column justify-content-around align-items-center px-4">
+                        <a href="index.html" class="main-page active">
+                            <i class="fa-sharp fa-solid fa-sliders"></i>
+                            <p class="menu-text">strona główna</p>
+                        </a>
+                        <a href="posts.html" class="posts">
+                            <i class="fa-regular fa-comments"></i>
+                            <p class="menu-text">Posty</p>
+                        </a>
+                        <a href="users.html" class="users">
+                            <i class="fa-solid fa-user-group"></i>
+                            <p class="menu-text">użytkownicy</p>
+                        </a>
+                    </nav>
+                    <section class="footer mt-5">
+                        <h3 class="footer-title mb-0">Diamonds CMS</h3>
+                        <p class="footer-text">&copy; Copyright 2022</p>
+                    </section>
+                </section>
+            </div>
+            <section class="col-10 p-0">
+                <section class="panel-right h-100">
+                    <section class="row m-0 h-100">
+                        <div class="col-9 mt-5">
+                           <section class="main-stats text-center">
+                                <h1 class="statistics-title py-5">Główne statystyki</h1>
+                                <div class="statistics-boxes d-flex flex-row align-items-center pb-5">
+                                    <div class="statistics-box">
+                                        <h3 class="statistics-box-title">posty</h3>
+                                        <p class="statistics-box-summary">Łącznie: 4250120</p>
+                                        <p class="statistics-box-summary-month">W tym miesiącu: 4250120</p>
+                                    </div>
+                                    <div class="statistics-box">
+                                        <h3 class="statistics-box-title">tematy</h3>
+                                        <p class="statistics-box-summary">Łącznie: 4250120</p>
+                                        <p class="statistics-box-summary-month">W tym miesiącu: 4250120</p>
+                                    </div>
+                                    <div class="statistics-box">
+                                        <h3 class="statistics-box-title">użytkownicy</h3>
+                                        <p class="statistics-box-summary">Łącznie: 4250120</p>
+                                        <p class="statistics-box-summary-month">W tym miesiącu: 4250120</p>
+                                    </div>
+                                </div>
+
+                                <div id="chart" class="py-5 text-dark"></div>
+                           </section>
+                           <section class="latest-posts text-center py-5 text-light">
+                                <div class="latest-posts-title d-flex flex-row justify-content-between align-items-center">
+                                    <h3 class="posts-title">Ostatnie posty: </h3>
+                                    <div class="dropdown">
+                                        <button class="btn btn-outline-secondary text-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                          Sortuj
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                          <li><a class="dropdown-item" href="#">Według dat</a></li>
+                                          <li><a class="dropdown-item" href="#">Według autora</a></li>
+                                        </ul>
+                                      </div>
+                                </div>
+                                <div class="latest-posts-table pt-5">
+                                    <table class="table text-light text-start">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col" colspan="3">Temat</th>
+                                            <th scope="col" colspan="1">użytkownik</th>
+                                            <th scope="col">Data</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody class="table-group-divider">
+                                          <tr>
+                                            <th scope="row">1</th>
+                                            <td colspan="3">Lorem, ipsum dolor.</td>
+                                            <td colspan="">Otto</td>
+                                            <td>20/20/2020</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">2</th>
+                                            <td colspan="3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                            <td>Thornton</td>
+                                            <td>20/29/2020</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">3</th>
+                                            <td colspan="3">Lorem ipsum dolor sit amet.</td>
+                                            <td>Lary the bird</td>
+                                            <td>20/20/2020</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                                <div class="latest-posts-switch d-flex align-items-center justify-content-center">
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination">
+                                          <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                              <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                          </li>
+                                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                          <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                              <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                          </li>
+                                        </ul>
+                                      </nav>
+                                </div>
+                           </section>
+                            
+                        </div>
+                        <section class="col-3 p-4 text-light text-center aside py-5 pe-5">
+                            <section class="aside-header py-5">
+                                <h1 class="aside-header-title"><i class="fa-regular fa-gem"></i> Diamonds</h1>
+                                <p class="aside-header-text pt-3">Powerful tool for professional & cookie lovers.</p>
+                            </section>
+                            <section class="aside-users py-5">
+                                <h3 class="aside-users-text">użytkownicy online</h3>
+                                <p class="aside-users-number">47</p>
+                                <h3 class="aside-users-gender pt-5">płeć użytkowników</h3>
+                                <div class="aside-users-gender-box d-flex flex-row justify-content-evenly">
+                                    <p class="aside-users-gender-box-title"><i class="fa-solid fa-person"></i> <br> 56%</p>
+                                    <p class="aside-users-gender-box-title"><i class="fa-solid fa-person-dress"></i> <br> 44%</p>
+                                </div>
+                            </section>
+                            <section class="aside-statistics pt-5">
+                                <h3 class="aside-statistics-title py-4">statystyki</h3>
+
+                                <div class="form-group">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Styczeń</option>
+                                        <option value="1">Luty</option>
+                                        <option value="2">Marzec</option>
+                                        <option value="3">Kwiecień</option>
+                                        <option value="4">Maj</option>
+                                        <option value="5">Czerwiec</option>
+                                        <option value="6">Lipec</option>
+                                        <option value="7">Sierpień</option>
+                                        <option value="8">Wrzesień</option>
+                                        <option value="9">Październik</option>
+                                        <option value="10">Listopad</option>
+                                        <option value="11">Grudzień</option>
+                                    </select>
+                                </div>
+                                <div class="row m-0 g-5">
+
+                                    <div class="col-6">
+                                        <p class="aside-statistics-text">posty</p>
+                                        <p class="aside-statistics-calculation">125.704</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="aside-statistics-text">Rejestracje</p>
+                                        <p class="aside-statistics-calculation">8.409</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="aside-statistics-text">Śr. czas - pobyt</p>
+                                        <p class="aside-statistics-calculation">46 min</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="aside-statistics-text">Śr. czas - aktywność</p>
+                                        <p class="aside-statistics-calculation">24 min</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="aside-statistics-text">ilość zamówień</p>
+                                        <p class="aside-statistics-calculation">928</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="aside-statistics-text">ilość reklamacji</p>
+                                        <p class="aside-statistics-calculation">6</p>
+                                    </div>
+                                
+                                </div>
+
+                               
+                        </section>
+                    </section>
+                </section>
+                
+            </div>
+        </div>
+        
+    </div>
+
+
+    <!-- linkowanie skryptow bootstrapa -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <!-- skryt do obsługi diagramu apexcharts -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- skryt odpowiedzialny za działanie poprawnego, wybranego apexcharta -->
+    <script src="./js/apexchartsettings.js"></script>
+</body>
+</html>

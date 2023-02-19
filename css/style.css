@@ -1,0 +1,372 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-width: 1600px;
+    font-family: 'Montserrat', sans-serif;
+    overflow: scroll;
+    background-color: #181D23;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.active
+{
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.panel
+{
+    width: 1600px;
+    height: 1000px;
+    background-color: #333;
+    border: 1px solid #4B5769;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.panel-left
+{
+    height: 100%;
+    background-color: #4B5769;
+}
+
+.info-top h1
+{
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* sekcja data */
+.date-box
+{
+    height: 160px;
+}
+
+.date-box .day
+{
+    font-size: 2rem;
+}
+
+.date-box .date
+{
+    font-size: 1.8rem;
+    opacity: 0.5;
+}
+
+.date-box .time
+{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+/* sekcja menu */
+.menu
+{
+    height: 700px;
+}
+
+.menu a
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 30%;
+    color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+}
+
+.menu a:hover
+{
+    background-color: transparent;
+    background-image: linear-gradient(160deg, rgba(0, 110, 255, .25) 0%, rgba(9, 255, 0, 0.25) 100%);
+}
+
+.menu i
+{
+    font-size: 5rem;
+    margin-bottom: 0.4rem;
+}
+
+.menu .menu-text
+{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+/* footer */
+.footer .footer-title
+{
+    font-size: 2rem;
+}
+
+.footer .footer-text
+{
+    font-size: 1.6rem;
+    opacity: 0.5;
+}
+
+.panel-right
+{
+    background-image: linear-gradient(180deg, rgba(55, 64, 76, 1) 0%, rgba(21, 26, 32, 1) 100%);
+}
+
+/* statistics */
+
+.statistics-title
+{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.statistics-box
+{
+    width: 100%;
+    height: 140px;
+    margin: 0 1.2rem;
+    padding: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    transition: background-color 0.2s linear;
+}
+
+.statistics-box:hover
+{
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.statistics-box .statistics-box-title
+{
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Latest Posts */
+
+.latest-posts
+{
+    margin: 0 1.2rem;
+}
+
+.latest-posts .posts-title
+{
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.latest-posts .btn, .dropdown-menu
+{
+    font-size: 1.4rem;
+}
+
+.latest-posts-table
+{
+    font-size: 1.4rem;
+}
+
+.latest-posts-switch .page-link
+{
+    padding: 0.8rem 1.4rem;
+    background-color: transparent;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.latest-posts-switch .page-link:hover
+{
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* aside */
+
+.aside-header .aside-header-title
+{
+    text-shadow: 0px 0px 5px white;
+}
+
+.aside-header .aside-header-text
+{
+    font-size: 1.4rem;
+}
+
+.aside-users-text, .aside-users-gender, .aside-statistics-title
+{
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.aside-users-number
+{
+    font-size: 3.5rem;
+}
+
+.aside-users-gender-box
+{
+    font-size: 2.8rem;
+}
+
+.aside-users-gender-box .fa-person
+{
+    text-shadow: 0px 0px 5px lime;
+}
+
+.aside-users-gender-box .fa-person-dress
+{
+    text-shadow: 0px 0px 5px #006eff;
+}
+
+.aside-statistics .form-select
+{
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.aside-statistics-text
+{
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.aside-statistics-calculation
+{
+    font-size: 1.2rem;
+    opacity: 0.5;
+}
+
+/* ------------------ posts.html --------------------- */
+
+.posts .card-subject
+{
+    opacity: 0.5;
+}
+
+.posts h3
+{
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.featured-post .btn
+{
+    font-size: 1.6rem;
+    
+}
+
+.featured-post .card-title
+{
+    font-size: 1.8rem;
+}
+
+.featured-post .card-body
+{
+    font-size: 1.2rem;
+
+}
+
+.users-active-posts .card-img-top
+{
+    height: 180px;
+    background-position: center;
+    object-fit: cover;
+    opacity: 0.5;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.users-active-posts .card-img-top:hover
+{
+    opacity: 1;
+    transition: opacity 0.3s, transform 0.3s;
+    transform: scale(1.05);
+}
+
+.users-active-posts .card-body h5, .card-body button
+{
+    font-size: 1.5rem;
+}
+
+.post-search .post-search-text
+{
+    font-size: 1.4rem;
+}
+
+.post-search .btn, .post-search input
+{
+    font-size: 1.6rem;
+}
+
+.posts-modal h3
+{
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.posts-modal .btn
+{
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+.posts-modal p
+{
+    font-size: 1.3rem;
+}
+
+/* ------------------ users.html --------------------- */
+
+.user-list .list-group .list-group-item
+{
+    margin-bottom: 1.2rem;
+    padding: 1rem;
+    background-color: transparent;
+    color: #fff;
+    font-size: 2rem;
+    border-top: 1px solid white;
+}
+
+.user-list .btn
+{
+    font-size: 1.6rem;
+}
+
+.diamond-search, .form-control, .form-select, .diamond-search-button-box .btn
+{
+    font-size: 1.8rem;
+}
+
+.users-modal .modal-title
+{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.users-modal .modal-body, .users-modal .form-select, .form-control, .btn
+{
+    font-size: 1.6rem;
+}
+
